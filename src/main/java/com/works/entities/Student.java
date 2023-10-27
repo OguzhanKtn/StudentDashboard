@@ -30,6 +30,5 @@ public class Student {
     private String email;
 
     @NotNull
-    @Min(8)
     private String password;
 }

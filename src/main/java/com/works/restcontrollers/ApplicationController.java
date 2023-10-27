@@ -1,7 +1,7 @@
 package com.works.restcontrollers;
 
-import com.works.entities.Student;
-import com.works.services.StudentService;
+import com.works.entities.Applications;
+import com.works.services.ApplicationService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,18 +13,13 @@ import javax.validation.Valid;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/student")
-public class StudentController {
+@RequestMapping("/application")
+public class ApplicationController {
 
-    final StudentService studentService;
+    final ApplicationService applicationService;
 
     @PostMapping("/save")
-        public ResponseEntity add(@Valid @RequestBody Student student){
-        return studentService.save(student);
-    }
-
-    @PostMapping("/login")
-    public ResponseEntity login(@RequestBody Student student){
-        return studentService.login(student);
+    public ResponseEntity add(@Valid @RequestBody Applications applications){
+      return   applicationService.save(applications);
     }
 }

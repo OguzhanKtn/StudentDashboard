@@ -17,6 +17,9 @@ public class Applications {
     private Long aid;
 
     @NotNull
+    private String studentName;
+
+    @NotNull
     private String university;
 
     @NotNull
