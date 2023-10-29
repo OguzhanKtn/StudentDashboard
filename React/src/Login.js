@@ -8,8 +8,7 @@ function Login() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
-  const navigate = useNavigate()
-
+  
 const sendForm = async (evt) =>{
    evt.preventDefault()
 
@@ -19,11 +18,10 @@ const sendForm = async (evt) =>{
 
 }
 
-
   return (
     <>
       <div className="container" id="login">
-        <form className="form-signin" onSubmit={sendForm}>
+        <form className="form-signin" onSubmit={sendForm} id='loginShadow'>
           <div className="text-center">
             <img
               className="mb-4"

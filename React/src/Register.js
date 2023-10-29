@@ -20,7 +20,7 @@ function Register() {
     <div className="container" id='register'>
     <div className="row">
         <div className="col-sm-4"></div>    
-            <form onSubmit={sendForm}>
+            <form onSubmit={sendForm} id='registerShadow'>
             <h2 className='h3 mb-3 ml-5 font-weight-normal'>User Register</h2>
                 <div className="mb-3">
                     <label className="form-label">Name</label>

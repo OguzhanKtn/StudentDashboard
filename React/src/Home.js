@@ -74,9 +74,9 @@ function Home() {
       <div className="container">
         <div className="row">
           <div className="col-4"></div>
-          <div className="col-4">
-            <h3>Application Form</h3>
-            <form onSubmit={sendForm}>
+          <div className="col-4" > 
+            <form onSubmit={sendForm} id="applicationForm">
+            <h3 id="text-application">Application Form</h3>
             <div class="mt-5">
               <input type="text" class="form-control" placeholder="name" onChange={(evt)=> setStudentName(evt.target.value)} />
             </div>
@@ -99,12 +99,11 @@ function Home() {
             <div className="mt-4">
               <input
                 class="form-control"
-                list="datalistOptions"
-                id="exampleDataList"
+                list="datalistOptions2"
                 placeholder="Type to search course"
                 onChange={(evt)=> setCourse(evt.target.value)}
               />
-              <datalist id="datalistOptions">
+              <datalist id="datalistOptions2">
                 <option value="Software Engineering" />
                 <option value="Electrical & Electronic Engineering" />
                 <option value="Medicine" />
