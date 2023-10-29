@@ -1,5 +1,5 @@
 import React ,{useState}from 'react'
-import { NavLink,useNavigate} from 'react-router-dom'
+import { NavLink} from 'react-router-dom'
 import { login } from './services/service'
 
 
@@ -20,7 +20,7 @@ const sendForm = async (evt) =>{
 
   return (
     <>
-      <div className="container" id="login">
+    <div  id="login" className='login-page'>
         <form className="form-signin" onSubmit={sendForm} id='loginShadow'>
           <div className="text-center">
             <img

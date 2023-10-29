@@ -21,7 +21,7 @@ function Home() {
   return (
     <>
       <div className="container">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav className="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container-fluid">
             <a class="navbar-brand" href="/">
               Student Dashboard
@@ -39,7 +39,7 @@ function Home() {
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown" id="dropPosition">
                   <a
                     class="nav-link dropdown-toggle"
                     id="dropdown"
@@ -48,17 +48,17 @@ function Home() {
                     aria-expanded="false"
                   >
                     <i class="bi bi-box-arrow-in-right mr-1"></i>
-                    Log in
+                    <strong> Log in</strong>
                   </a>
                   <ul class="dropdown-menu">
                     <li>
-                      <NavLink class="dropdown-item" to="/login">
+                      <NavLink class="dropdown-item btn" to="/login">
                         <i class="bi bi-box-arrow-in-right mr-1"></i>
                         Log in
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink class="dropdown-item" to="/register">
+                      <NavLink class="dropdown-item btn" to="/register">
                         <i class="bi bi-sign-intersection mr-1"></i>
                         Sign in
                       </NavLink>

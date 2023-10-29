@@ -1,4 +1,4 @@
-#login,#register{
+#register{
     display: -ms-flexbox;
     display: -webkit-box;
     display: flex;
@@ -9,10 +9,25 @@
     -webkit-box-pack: center;
     justify-content: center;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 350px;
+}
+
+#login{
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 280px;
 }
 
 #applicationForm{
+    background-color: rgb(232, 243, 243);
     margin-top: 50px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10px;
@@ -27,7 +42,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10px;
     margin-top: 20px;
-    padding: 50px 50px 50px 50px
+    padding: 100px 100px 100px 100px
 }
 
 #registerShadow{
@@ -35,4 +50,16 @@
     border-radius: 10px;
     margin-top: 20px;
     padding: 50px 50px 50px 50px
+}
+
+.login-page{
+    background-color: rgb(193, 246, 250);
+}
+
+.register-page{
+    background-color: bisque;
+}
+
+#dropPosition{
+    left: 700px;
 }

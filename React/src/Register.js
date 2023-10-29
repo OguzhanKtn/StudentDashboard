@@ -17,7 +17,7 @@ function Register() {
   }
 
   return (
-    <div className="container" id='register'>
+    <div className="register-page" id='register'>
     <div className="row">
         <div className="col-sm-4"></div>    
             <form onSubmit={sendForm} id='registerShadow'>
