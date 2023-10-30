@@ -14,6 +14,7 @@ import javax.validation.Valid;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/student")
+@CrossOrigin
 public class StudentController {
 
     final StudentService studentService;
