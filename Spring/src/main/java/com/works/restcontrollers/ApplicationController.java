@@ -14,6 +14,7 @@ import javax.validation.Valid;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/application")
+@CrossOrigin
 public class ApplicationController {
 
     final ApplicationService applicationService;
